@@ -16,7 +16,7 @@ export const useHttp = () => {
             if (response.ok && response.headers.get('authorization') != null) {
                 let tokens = response.headers.get('authorization');
                 localStorage.setItem("tokens", tokens); //добавление токена  в localstorage
-                document.location.href = "http://localhost:3000/home";
+                document.location.href = "http://invest-for.surge.sh/";
 
 
                 async function testing1() {
