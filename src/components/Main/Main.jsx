@@ -1,0 +1,497 @@
+import React from 'react';
+
+
+const Main = () => {
+    return(
+        <body>
+		<div class="main-page-wrapper">
+			<div id="loader-wrapper">
+				<div id="loader"></div>
+			</div>
+
+			<div class="html-top-content">
+				
+				<div class="theme-top-section">
+					
+					
+					<div id="theme-banner" class="theme-banner-three">
+						<img src="https://i.ibb.co/z5w6PcT/16.png" alt="" class="shape-one"/>
+						<img src="https://i.ibb.co/4Nn8VdF/17.png" alt="" class="shape-two"/>
+						<img src="https://i.ibb.co/9qHggcP/19.png" alt="" class="shape-four"/>
+						<div class="container">
+							<div class="main-text-wrapper">
+								<h1>Хочешь инвестировать, <br/>но не знаешь как?</h1>
+								<p>Investing For Dummies поможет тебе в этом!</p>
+								<ul class="button-group clearfix">
+									<li><a href="#">Хочу инвестировать</a></li>
+									{/* <!-- <li>
+										<div class="btn-group">
+										  <a href="#" class="download-button">Download For OS X</a>
+										  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    <span class="sr-only">Toggle Dropdown</span>
+										  </button>
+										  <div class="dropdown-menu dropdown-menu-right">
+										    <a class="download-win" href="#">Download For Windows</a>
+										  </div>
+										</div>
+									</li> --> */}
+								</ul>
+								<img src="https://i.ibb.co/7jNjfZY/18.png" alt="" class="shape-three"/>
+								<img src="https://i.ibb.co/5nh4HmK/3.png" alt="" class="shape-five"/>
+							</div>
+						</div>
+					</div> 
+				</div> 
+				
+				<div class="about-cryto style-two" id="about">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 order-lg-last">
+								<div class="theme-title">
+									{/* <!-- <div class="upper-heading">What is crypto?</div> --> */}
+									<h2>Что такое Investing for Dummies?</h2>
+								</div> 
+								<p class="sub-text">Наш сервис предназначен для помощи начинающим инвесторам и людям, желающим узнать о вариантах пассивного заработка на бирже</p>
+								{/* <!-- <p class="text">Lorem ipsum dolor sit amet, has at lorem utin mucius,  elitro dicam sit malorum. Fugit convenire adhuc putant eam. scripta iudicabit, dicit le persius ponderum id nec.</p> --> */}
+								<a href="#" class="learn-more">Узнать больше</a>
+								{/* <!-- <p class="know-more">Want to learn more about us? <a href="#">Clieck here</a></p> --> */}
+							</div>
+							<div class="col-lg-6 order-lg-first">
+								<div class="icon-data">
+									<div class="single-box" data-aos="fade-right" data-aos-duration="1100">
+										<img src="https://i.ibb.co/7QzZTGv/14.png" alt=""/>
+										{/* <!-- <h3>Strong Security</h3> -->
+										<!-- <p>Lorem ipsum dolor sit amet, has at lorem sit.</p> --> */}
+									</div> 
+									<div class="single-box" data-aos="fade-down" data-aos-duration="1100">
+										<img src="https://i.ibb.co/tYhgqvw/15.png" alt=""/>
+										{/* <!-- <h3>Digital Money</h3> -->
+										<!-- <p>Lorem ipsum dolor sit amet, has at lorem sit.</p> --> */}
+									</div> 
+									<div class="single-box" data-aos="fade-up" data-aos-duration="1100">
+										<img src="https://i.ibb.co/z5w6PcT/16.png" alt=""/>
+										{/* <!-- <h3>Most Populer</h3> -->
+										<!-- <p>Lorem ipsum dolor sit amet, has at lorem sit.</p> --> */}
+									</div> 
+								</div> 
+							</div>
+						</div>
+					</div> 
+				</div>
+
+				<div class="our-features-four" id="features">
+					<img src="https://i.ibb.co/gVN285Z/27.png" alt="" class="shape"/>
+					<div class="container">
+						<div class="theme-title text-center">
+							<h2>Возможности</h2>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="900">
+								<div class="single-feature">
+									<div class="icon-box">
+										<img src="https://i.ibb.co/n6hc6Jr/20.png" alt="" class="primary-icon"/>
+									</div>
+									<h3>Оценка показателей <br/> акций</h3>
+									<p>Наш алгоритм проводит анализ предыдущих периодов, на основе этого составляя оценку по совокупности факторов.</p>
+									<a href="#"><i class="flaticon-right-thin"></i></a>
+								</div> 
+							</div> 
+							<div class="col-md-4 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="1200">
+								<div class="single-feature">
+									<div class="icon-box">
+										<img src="https://i.ibb.co/fXfh54Y/21.png" alt="" class="primary-icon"/>
+									</div>
+									<h3>Оценка риск-портфеля профиля</h3>
+									<p>Сервис поможет разработать оптимальную инвестиционную программу, отвечающую Вашим целям.</p>
+									<a href="#"><i class="flaticon-right-thin"></i></a>
+								</div> 
+							</div> 
+							<div class="col-md-4 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="1500">
+								<div class="single-feature">
+									<div class="icon-box">
+										<img src="https://i.ibb.co/qxmJWgN/22.png" alt="" class="primary-icon"/>
+									</div>
+									<h3>Справочник полезных терминов</h3>
+									<p>Новичкам сложно разобраться в изобилии терминов, интерактивные подсказки помогут войти в курс дела</p>
+									<a href="#"><i class="flaticon-right-thin"></i></a>
+								</div> 
+							</div> 
+						</div> 
+					</div> 
+				</div> 
+
+				{/* <!-- <div class="our-feature-five" id="services">
+					<img src="images/shape/28.png" alt="" class="shape">
+					<div class="container">
+						<div class="row single-block">
+							<div class="col-lg-6">
+								<div class="text">
+									<div class="icon-box"><img src="images/icon/17.png" alt=""></div>
+									<h2 class="title">Untraceable transfer & Fast processing .</h2>
+									<p>Mining should be fair & easy! We do not allow ASICs on our network. The development team is wholy commited to with keeping it that way.</p>
+									<a href="#" class="learn-more">Learn More <i class="flaticon-right-thin"></i></a>
+								</div> 
+							</div> 
+							<div class="col-lg-6 img-box"><div><img src="images/shape/23.png" alt=""></div></div>
+						</div> 
+
+						<div class="row single-block">
+							<div class="col-lg-6 order-lg-last">
+								<div class="text">
+									<div class="icon-box"><img src="images/icon/18.png" alt=""></div>
+									<h2 class="title">Populer Money and Smart wallet.</h2>
+									<p>Mining should be fair & easy! We do not allow ASICs on our network. The development team is wholy commited to with keeping it that way.</p>
+									<a href="#" class="learn-more">Learn More <i class="flaticon-right-thin"></i></a>
+								</div> 
+							</div> 
+							<div class="col-lg-6 order-lg-first img-box"><div><img src="images/shape/24.png" alt=""></div></div>
+						</div> 
+
+						<div class="row single-block">
+							<div class="col-lg-6">
+								<div class="text">
+									<div class="icon-box"><img src="images/icon/19.png" alt=""></div>
+									<h2 class="title">Upholding Confidentialit & Strong Security.</h2>
+									<p>Mining should be fair & easy! We do not allow ASICs on our network. The development team is wholy commited to with keeping it that way.</p>
+									<a href="#" class="learn-more">Learn More <i class="flaticon-right-thin"></i></a>
+								</div> 
+							</div> 
+							<div class="col-lg-6 img-box"><div><img src="images/shape/25.png" alt=""></div></div>
+						</div> 
+					</div>
+				</div>  --> */}
+				
+				{/* <!-- <div class="apps-overview color-three" id="apps-review">
+					<img src="images/shape/29.png" alt="" class="shape">
+					<div class="overlay-bg">
+						<div class="container">
+							<div class="inner-wrapper">
+								<img src="images/home/s8.png" alt="" class="s8-mockup" data-aos="fade-down" data-aos-duration="2500">
+								<img src="images/home/x.png" alt="" class="x-mockup" data-aos="fade-up" data-aos-duration="2500">
+								<div class="row">
+									<div class="col-lg-5 offset-lg-7">
+										<div class="text">
+											<h3>don’t miss our apps</h3>
+											<h2>Mobile Application for Faster Access.</h2>
+											<h6>Now you can control dashboard from the mobile!</h6>
+											<p>Mining should be fair & easy! We dose not allow ASIC on our network. The development team is who commited to with keeping it that way.</p>
+											<ul class="button-group">
+												<li><a href="#"><i class="flaticon-apple"></i> Apple Store</a></li>
+												<li><a href="#"><img src="images/icon/playstore.png" alt=""> Google Play</a></li>
+											</ul>
+										</div> 
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div> 
+				</div>  --> */}
+
+
+				{/* <!-- <div class="testimonial-section">
+					<div class="full-width">
+						<div class="theme-title text-center">
+							<h2>Отзывы</h2>
+						</div>
+						<div class="testimonial-slider-two">
+							<div class="item">
+								<div class="single-block clearfix">
+									<div class="img-block"><img src="images/home/1.jpg" alt=""></div>
+									<div class="text">
+										<h3 class="name">Rashed Kabir</h3>
+										<span>CEO, Creativegigs</span>
+										<p>“Success is making our clients succeed. Nothing else matters how we work.”</p>
+										<img src="images/home/sign.png" alt="" class="sign">
+									</div> 
+								</div> 
+							</div>
+							<div class="item">
+								<div class="single-block clearfix">
+									<div class="img-block"><img src="images/home/2.jpg" alt=""></div>
+									<div class="text">
+										<h3 class="name">Jannatul Fa.</h3>
+										<span>MD. Tourisom Group</span>
+										<p>“Success is making our clients succeed. Nothing else matters how we work.”</p>
+										<img src="images/home/sign.png" alt="" class="sign">
+									</div> 
+								</div> 
+							</div>
+							<div class="item">
+								<div class="single-block clearfix">
+									<div class="img-block"><img src="images/home/1.jpg" alt=""></div>
+									<div class="text">
+										<h3 class="name">Rashed Kabir</h3>
+										<span>CEO, Creativegigs</span>
+										<p>“Success is making our clients succeed. Nothing else matters how we work.”</p>
+										<img src="images/home/sign.png" alt="" class="sign">
+									</div> 
+								</div> 
+							</div>
+							<div class="item">
+								<div class="single-block clearfix">
+									<div class="img-block"><img src="images/home/2.jpg" alt=""></div>
+									<div class="text">
+										<h3 class="name">Jannatul Fa.</h3>
+										<span>MD. Tourisom Group</span>
+										<p>“Success is making our clients succeed. Nothing else matters how we work.”</p>
+										<img src="images/home/sign.png" alt="" class="sign">
+									</div> 
+								</div> 
+							</div>
+							<div class="item">
+								<div class="single-block clearfix">
+									<div class="img-block"><img src="images/home/1.jpg" alt=""></div>
+									<div class="text">
+										<h3 class="name">Rashed Kabir</h3>
+										<span>CEO, Creativegigs</span>
+										<p>“Success is making our clients succeed. Nothing else matters how we work.”</p>
+										<img src="images/home/sign.png" alt="" class="sign">
+									</div> 
+								</div> 
+							</div>
+							<div class="item">
+								<div class="single-block clearfix">
+									<div class="img-block"><img src="images/home/2.jpg" alt=""></div>
+									<div class="text">
+										<h3 class="name">Jannatul Fa.</h3>
+										<span>MD. Tourisom Group</span>
+										<p>“Success is making our clients succeed. Nothing else matters how we work.”</p>
+										<img src="images/home/sign.png" alt="" class="sign">
+									</div> 
+								</div> 
+							</div>
+							<div class="item">
+								<div class="single-block clearfix">
+									<div class="img-block"><img src="images/home/1.jpg" alt=""></div>
+									<div class="text">
+										<h3 class="name">Rashed Kabir</h3>
+										<span>CEO, Creativegigs</span>
+										<p>“Success is making our clients succeed. Nothing else matters how we work.”</p>
+										<img src="images/home/sign.png" alt="" class="sign">
+									</div> 
+								</div> 
+							</div>
+						</div> 
+					</div> 
+				</div> 
+
+
+				
+				<div class="faq-section">
+					<div class="container">
+						<div class="theme-title text-center">
+							<h2>Crypto FAQ’s</h2>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="accordion-one">
+									<div class="panel-group theme-accordion" id="accordion">
+									  <div class="panel">
+									    <div class="panel-heading active-panel">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+									        How can i get help by bitro wallet?</a>
+									      </h6>
+									    </div>
+									    <div id="collapse1" class="panel-collapse collapse show">
+									      <div class="panel-body">
+									      	<p>Lorem ipsum dolor sit amet, vix an natum labitur eleifd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet utos soletu possit quo. Sea cu justo laudem.</p>
+									      </div>
+									    </div>
+									  </div> 
+									  <div class="panel">
+									    <div class="panel-heading">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+									        I have questions about the updated Terms of Service and Privacy Policy</a>
+									      </h6>
+									    </div>
+									    <div id="collapse2" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      	<p>Lorem ipsum dolor sit amet, vix an natum labitur eleifd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet utos soletu possit quo. Sea cu justo laudem.</p>
+									      </div>
+									    </div>
+									  </div> 
+									  <div class="panel">
+									    <div class="panel-heading">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+									        User Guide: Getting Started</a>
+									      </h6>
+									    </div>
+									    <div id="collapse3" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      	<p>Lorem ipsum dolor sit amet, vix an natum labitur eleifd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet utos soletu possit quo. Sea cu justo laudem.</p>
+									      </div>
+									    </div>
+									  </div> 
+									  <div class="panel">
+									    <div class="panel-heading">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+									       Are you plan to open a brance on Dhaka?</a>
+									      </h6>
+									    </div>
+									    <div id="collapse4" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      	<p>Lorem ipsum dolor sit amet, vix an natum labitur eleifd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet utos soletu possit quo. Sea cu justo laudem.</p>
+									      </div>
+									    </div>
+									  </div> 
+									</div> 
+								</div> 
+							</div>
+
+							<div class="col-lg-6">
+								<div class="accordion-one">
+									<div class="panel-group theme-accordion" id="accordion-two">
+									  <div class="panel">
+									    <div class="panel-heading">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion-two" href="#collapse11">
+									        How can i get help by x company?</a>
+									      </h6>
+									    </div>
+									    <div id="collapse11" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      	<p>Lorem ipsum dolor sit amet, vix an natum labitur eleifd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet utos soletu possit quo. Sea cu justo laudem.</p>
+									      </div>
+									    </div>
+									  </div> 
+									  <div class="panel">
+									    <div class="panel-heading">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion-two" href="#collapse22">
+									        What about loan programs & after bank loan advantage?</a>
+									      </h6>
+									    </div>
+									    <div id="collapse22" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      	<p>Lorem ipsum dolor sit amet, vix an natum labitur eleifd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet utos soletu possit quo. Sea cu justo laudem.</p>
+									      </div>
+									    </div>
+									  </div> 
+									  <div class="panel">
+									    <div class="panel-heading">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion-two" href="#collapse33">
+									        How long your contract terms?</a>
+									      </h6>
+									    </div>
+									    <div id="collapse33" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      	<p>Lorem ipsum dolor sit amet, vix an natum labitur eleifd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet utos soletu possit quo. Sea cu justo laudem.</p>
+									      </div>
+									    </div>
+									  </div> 
+									  <div class="panel">
+									    <div class="panel-heading">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion-two" href="#collapse44">
+									       How can i become a contributer with compress as partner?</a>
+									      </h6>
+									    </div>
+									    <div id="collapse44" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      	<p>Lorem ipsum dolor sit amet, vix an natum labitur eleifd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet utos soletu possit quo. Sea cu justo laudem.</p>
+									      </div>
+									    </div>
+									  </div> 
+									  <div class="panel">
+									    <div class="panel-heading">
+									      <h6 class="panel-title">
+									        <a data-toggle="collapse" data-parent="#accordion-two" href="#collapse45">
+									       Are you plan to open a brance on Dhaka?</a>
+									      </h6>
+									    </div>
+									    <div id="collapse45" class="panel-collapse collapse">
+									      <div class="panel-body">
+									      	<p>Lorem ipsum dolor sit amet, vix an natum labitur eleifd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet utos soletu possit quo. Sea cu justo laudem.</p>
+									      </div>
+									    </div>
+									  </div> 
+									</div> 
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>  --> */}
+
+
+				{/* <!-- <div class="contact-us-one bg-color m0" id="contact">
+					<img src="images/shape/26.png" alt="" class="shape">
+					<img src="images/shape/30.png" alt="" class="shape-two">
+					<div class="container">
+						<div class="theme-title text-center">
+							<h2>Get In Touch</h2>
+							<p>vel modus honestatis ad, vim an vidit aliquam instructior. Alii efficiendi <br> intellegebat nec ea, mea elitr interesset ea</p>
+						</div>
+						<form action="#" class="form-validation" autocomplete="off">
+							<div class="row">
+								<div class="col-md-6">
+									<label>First Name*</label>
+									<input type="text" placeholder="First Name" name="firstName">
+								</div>
+								<div class="col-md-6">
+									<label>Last Name*</label>
+									<input type="text" placeholder="Last Name" name="lastName">
+								</div>
+								<div class="col-md-6">
+									<label>Email*</label>
+									<input type="email" placeholder="Email Address" name="email">
+								</div>
+								<div class="col-md-6">
+									<label>Phone</label>
+									<input type="text" placeholder="Phone Number" name="phone">
+								</div>
+								<div class="col-12">
+									<label>I would like to discuss*</label>
+									<input type="text" name="message">
+								</div>
+							</div>
+							<button>Send Message</button>
+						</form>
+	
+						<div class="alert-wrapper" id="alert-success">
+							<div id="success">
+								<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+								<div class="wrapper">
+					               	<p>Your message was sent successfully.</p>
+					             </div>
+					        </div>
+					    </div> 
+					    <div class="alert-wrapper" id="alert-error">
+					        <div id="error">
+					           	<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+					           	<div class="wrapper">
+					               	<p>Sorry!Something Went Wrong.</p>
+					            </div>
+					        </div>
+					    </div> 
+					</div>
+				</div>  --> */}
+
+
+				{/* <!-- <div class="partner-section">
+					<div class="container">
+						<div class="partner-slider">
+							<div class="item"><a href="#"><img src="images/logo/p-1.png" alt=""></a></div>
+							<div class="item"><a href="#"><img src="images/logo/p-2.png" alt=""></a></div>
+							<div class="item"><a href="#"><img src="images/logo/p-3.png" alt=""></a></div>
+							<div class="item"><a href="#"><img src="images/logo/p-4.png" alt=""></a></div>
+							<div class="item"><a href="#"><img src="images/logo/p-5.png" alt=""></a></div>
+						</div>
+					</div>
+				</div> --> */}
+			</div> 
+            
+			<button class="scroll-top tran3s color-one-bg">
+				<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+			</button>
+		</div> 
+	</body>
+    )
+}
+
+export default Main;
