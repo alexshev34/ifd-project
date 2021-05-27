@@ -197,9 +197,10 @@ body {
   margin-right: auto;
 }
 .risk__img {
-  width: 342px;
-  height: 390px;
-  background: #6F42C1;
+  max-width: 227px;
+  margin: 0 auto;
+  /* height: 390px; */
+  /* background: #6F42C1; */
 }
 
 .recomendation {
@@ -242,7 +243,8 @@ body {
   margin-right: auto;
 }
 .recomendation__img {
-  width: 342px;
-  height: 390px;
-  background: #6F42C1;
+  max-width: 276px;
+  margin: 0 auto;
+  /* height: 390px; */
+  /* background: #6F42C1; */
 }

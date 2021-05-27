@@ -1,0 +1,48 @@
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 15px;
+}
+
+.header__preview {
+    position: relative;
+    padding-left: 88px;
+  }
+  .header__preview::before {
+    content: "";
+    position: absolute;
+    background-image: url(https://i.ibb.co/njP7tWQ/preview-img-1.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 1272px;
+    height: 738px;
+    left: 0px;
+    top: -116px;
+  }
+  .header__title {
+    max-width: 865px;
+    padding-top: 91px;
+    color: #fff;
+  }
+  .header__text {
+    padding-top: 55px;
+    padding-bottom: 58px;
+    font-size: 23px;
+    line-height: 49px;
+    color: #fff;
+  }
+  
+  .btn__fill {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+    border: none;
+    padding: 4px 29px 4px 21px;
+    width: 208px;
+    max-width: 208px;
+    background: #4297C7;
+    border-radius: 10px;
+    cursor: pointer;
+  }

@@ -7,16 +7,27 @@ import UserProfile from '../UserProfile/UserProfile';
 import Header from '../Header/Header';
 import ProfileInformation from '../UserProfile/ProfileInformation';
 import Footer from '../Footer/Footer';
+import PortfolioAppraisal from '../UserProfile/PortfolioAppraisal/PortfolioAppraisal';
+import UserAnalytics from '../UserProfile/UserAnalytics/UserAnalytics';
+import UserHeader from '../UserProfile/UserHeader/UserHeader';
+import UserPortfolio from '../UserProfile/UserPortfolio/UserPortfolio';
+import TopStock from '../UserProfile/AppraisalStock/TopStock/TopStock';
 // import Header from './components/Header/Header';
 
 const MainPage = () => {
     if(localStorage.getItem('tokens')){
         return(
-            // <UserProfile/>
+            <>
+            <UserHeader/>
             <Switch>
                 <Route exact path="/home" component={UserProfile}/>
                 <Route exact path="/worksheet" component={ProfileInformation}/>
+                <Route exact path="/appraisal" component={PortfolioAppraisal}/>
+                <Route exact path="/analytics" component={UserAnalytics}/>
+                <Route exact path="/portfolio" component={UserPortfolio}/>
+                <Route exact path="/top-stock" component={TopStock}/>
             </Switch>
+            </>
         )
     }
     else{

@@ -16,7 +16,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         try {
             e.preventDefault();
-            const data = await request ('http://20.52.53.19:80/login', 'POST', { ...values }) //данные которые передаются с сервера
+            const data = await request ('http://51.116.170.180:80/login', 'POST', { ...values }) //данные которые передаются с сервера
         }
         catch (e) {
 
@@ -25,38 +25,38 @@ const Login = () => {
 
     return(
         <>
-            <div class="testing">
-             <div class="container">
-                <div class="row">
-                    <div class="col-md-offset-3 col-md-6">
-                        <form class="form-horizontal" onSubmit={handleSubmit}>
-                            <span class="heading">АВТОРИЗАЦИЯ</span>
-                            <div class="form-group">
+            <div className="testing">
+             <div className="container">
+                <div className="row">
+                    <div className="col-md-offset-3 col-md-6">
+                        <form className="form-horizontal" onSubmit={handleSubmit}>
+                            <span className="heading">АВТОРИЗАЦИЯ</span>
+                            <div className="form-group">
                                 <input type="email"
-                                    class="form-control"
+                                    className="form-control"
                                     id="login"
                                     name="login"
                                     placeholder="E-mail"
                                     onChange={registerHandler}/>
-                                    <i class="fa fa-user"></i>
+                                    <i className="fa fa-user"></i>
                             </div>
-                                <div class="form-group help">
+                                <div className="form-group help">
                                     <input type="password" 
-                                        class="form-control" 
+                                        className="form-control" 
                                         id="password"
                                         name="password" 
                                         placeholder="Password"
                                         onChange={registerHandler}/>
-                                        <i class="fa fa-lock"></i>
-                                        <a href="#" class="fa fa-question-circle"></a>
+                                        <i className="fa fa-lock"></i>
+                                        <a href="#" className="fa fa-question-circle"></a>
                                 </div>
-                                    <div class="form-group">
-                                        <div class="main-checkbox">
+                                    <div className="form-group">
+                                        <div className="main-checkbox">
                                             <input type="checkbox" value="none" id="checkbox1" name="check" />
                                             <label for="checkbox1"></label>
                                         </div>
-                                        <span class="text">Запомнить</span>
-                                        <button type="submit" class="btn btn-default">Войти</button>
+                                        <span className="text">Запомнить</span>
+                                        <button type="submit" className="btn btn-default">Войти</button>
                                     </div>
                         </form>
                     </div>

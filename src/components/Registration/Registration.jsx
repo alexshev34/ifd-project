@@ -19,7 +19,7 @@ const Registration = () => {
     const handleSubmit = async (e) => {
         try {
             e.preventDefault();
-            const data = await request ('http://20.52.53.19:80/users/sign-up', 'POST', { ...values }) //данные которые передаются с сервера
+            const data = await request ('http://51.116.170.180:80/users/sign-up', 'POST', { ...values }) //данные которые передаются с сервера
         }
         catch (e) {
 

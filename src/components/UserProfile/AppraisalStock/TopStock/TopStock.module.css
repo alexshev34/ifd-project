@@ -1,0 +1,30 @@
+.container{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 15px;
+}
+
+.stock__title{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 100px;
+}
+
+.stock__text{
+    text-align: center;
+    font-size: 25px;
+}
+
+.stock__table table{
+    margin: 60px auto;
+    border-collapse: collapse;
+}
+
+.stock__table table th{
+    width: 300px;
+    text-align: center;
+}
+
+.stock__table table td{
+    text-align: center;
+}

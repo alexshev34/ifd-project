@@ -2,15 +2,10 @@ import React, { useState } from 'react';
 import s from './ProfileInformation.module.css'
 import { useHttp } from '../../hooks/http.hookProfile';
 
-const ProfileInformation = () => {
+c ProfileInformation = () => {
     const {loading, request} = useHttp()
     const [form, setForm] = useState({
-        stock: '',
-        col: '',
-        // age: '',
-        // month_income: '',
-        // plan_month: '',
-        // plan_year: ''
+        sum: ''
     })
 
     const orderHandler = e => {
@@ -20,7 +15,7 @@ const ProfileInformation = () => {
     const handleSubmit = async (e) => {
         try{
             e.preventDefault();
-            const data = await request ('http://51.116.170.180:80/add-stock', 'POST', { ...form })
+            const data = await request ('http://51.116.170.180:80/get-recommendations', 'POST', { ...form })
         }
         catch (e) {
 
@@ -32,38 +27,16 @@ const ProfileInformation = () => {
         <form onSubmit={handleSubmit}>
             <section className={s.portfolio}>
                 <div className={s.container}>
-                    <h1 className={s.portfolio__title}>Заполнение портфеля</h1>
+                    <h1 className={s.portfolio__title}>Рекомендации/прогнозы</h1>
                     <p className={s.portfolio__active}>Тип актива:</p>
                     <ul className={s.portfolio__list}>
                         <li className={s.portfolio__item}>
-                            <p className={s.portfolio__text}>Акция</p>
+                            <p className={s.portfolio__text}>Введите доступную сумму</p>
                             {/* <p className={s.portfolio__text}>Облигация</p>
                             <p className={s.portfolio__text}>Прочие</p> */}
                         </li>
                         <li className={s.portfolio__item}>
-                            <select className={s.portfolio__select1} name="stock" id="stock" onChange={orderHandler}>
-                                <option selected>Название компании</option>
-                                <option value="MD Medical Group Investments PLC">MD Medical Group Investments PLC</option>
-                                <option value="ИСКЧ">ИСКЧ</option>
-                                <option value="Globaltrans Investment PLC">Globaltrans Investment PLC</option>
-                                <option value="Аэрофлот">Аэрофлот</option>
-                                <option value="ГК Самолет">ГК Самолет</option>
-                                <option value="Городские Инновационные Технологии">Городские Инновационные Технологии</option>
-                            </select><br />
-                            {/* <select className={s.portfolio__select1} name="" id="" onChange={orderHandler}>
-                                <option value="Название компании">Название компании</option>
-                            </select><br />
-                            <select className={s.portfolio__select1} name="" id="" onChange={orderHandler}>
-                                <option value="Название компании">Выберите тип</option>
-                            </select> */}
-                        </li>
-                        <li className={s.portfolio__item}>
-                            <select className={s.portfolio__select2} name="col" id="col" onChange={orderHandler}>
-                                <option selected>Количество</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select><br />
+                            <input className={s.portfolio__select1} type="text" name="sum" id="sum" value={form.sum} onChange={orderHandler}/>
                             {/* <select className={s.portfolio__select2} name="" id="" onChange={orderHandler}>
                                 <option selected>Количество</option>
                                 <option value="1">1</option>

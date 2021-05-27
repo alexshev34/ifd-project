@@ -20,7 +20,7 @@ export const useHttp = () => {
 
 
                 async function testing1() {
-                    let testing1 = await fetch('http://20.52.53.19:80/users/get-current-user', {
+                    let testing1 = await fetch('http://51.116.170.180:80/users/get-current-user', {
                         method: 'GET',
                         headers: {
                             'authorization': localStorage.getItem('tokens')
