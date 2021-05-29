@@ -6,11 +6,7 @@ const ProfileInformation = () => {
     const {loading, request} = useHttp()
     const [form, setForm] = useState({
         stock: '',
-        col: '',
-        // age: '',
-        // month_income: '',
-        // plan_month: '',
-        // plan_year: ''
+        col: ''
     })
 
     const orderHandler = e => {
@@ -33,7 +29,6 @@ const ProfileInformation = () => {
             <section className={s.portfolio}>
                 <div className={s.container}>
                     <h1 className={s.portfolio__title}>Заполнение портфеля</h1>
-                    <p className={s.portfolio__active}>Тип актива:</p>
                     <ul className={s.portfolio__list}>
                         <li className={s.portfolio__item}>
                             <p className={s.portfolio__text}>Акция</p>
@@ -58,24 +53,7 @@ const ProfileInformation = () => {
                             </select> */}
                         </li>
                         <li className={s.portfolio__item}>
-                            <select className={s.portfolio__select2} name="col" id="col" onChange={orderHandler}>
-                                <option selected>Количество</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select><br />
-                            {/* <select className={s.portfolio__select2} name="" id="" onChange={orderHandler}>
-                                <option selected>Количество</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select><br />
-                            <select className={s.portfolio__select2} name="" id="" onChange={orderHandler}>
-                                <option selected>Количество</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select> */}
+                            <input className={s.portfolio__select2} type="text" name="col" id="col" value={form.col} onChange={orderHandler} placeholder="Количество"/><br />
                         </li>
                     </ul>
                 </div>

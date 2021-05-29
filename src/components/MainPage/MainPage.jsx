@@ -12,6 +12,7 @@ import UserAnalytics from '../UserProfile/UserAnalytics/UserAnalytics';
 import UserHeader from '../UserProfile/UserHeader/UserHeader';
 import UserPortfolio from '../UserProfile/UserPortfolio/UserPortfolio';
 import TopStock from '../UserProfile/AppraisalStock/TopStock/TopStock';
+import ResultRecommendation from '../UserProfile/ResultRecommendation/ResultRecommendation';
 // import Header from './components/Header/Header';
 
 const MainPage = () => {
@@ -26,6 +27,7 @@ const MainPage = () => {
                 <Route exact path="/analytics" component={UserAnalytics}/>
                 <Route exact path="/portfolio" component={UserPortfolio}/>
                 <Route exact path="/top-stock" component={TopStock}/>
+                <Route exact path="/recommendation" component={ResultRecommendation}/>
             </Switch>
             </>
         )
