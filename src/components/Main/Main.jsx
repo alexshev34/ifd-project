@@ -1,6 +1,6 @@
 import React from 'react';
-
-
+import './../responsive.css';
+import './responsive2.css';
 const Main = () => {
     return(
         <body>
@@ -23,7 +23,7 @@ const Main = () => {
 								<h1>Хочешь инвестировать, <br/>но не знаешь как?</h1>
 								<p>Investing For Dummies поможет тебе в этом!</p>
 								<ul className="button-group clearfix">
-									<li><a href="#">Хочу инвестировать</a></li>
+									<li><a href="https://www.sberbank.ru/ru/person/investments/sber_invest">Хочу инвестировать</a></li>
 									{/* <!-- <li>
 										<div className="btn-group">
 										  <a href="#" className="download-button">Download For OS X</a>
@@ -43,7 +43,7 @@ const Main = () => {
 					</div> 
 				</div> 
 				
-				<div className="about-cryto style-two" id="about">
+				<div className="about-cryto style-two flg2" id="about">
 					<div className="container">
 						<div className="row">
 							<div className="col-lg-6 order-lg-last">
@@ -56,7 +56,7 @@ const Main = () => {
 								<a href="#" className="learn-more">Узнать больше</a>
 								{/* <!-- <p className="know-more">Want to learn more about us? <a href="#">Clieck here</a></p> --> */}
 							</div>
-							<div className="col-lg-6 order-lg-first">
+							<div className="col-lg-6 order-lg-first flg">
 								<div className="icon-data">
 									<div className="single-box" data-aos="fade-right" data-aos-duration="1100">
 										<img src="https://i.ibb.co/7QzZTGv/14.png" alt=""/>
@@ -83,7 +83,7 @@ const Main = () => {
 					<img src="https://i.ibb.co/gVN285Z/27.png" alt="" className="shape"/>
 					<div className="container">
 						<div className="theme-title text-center">
-							<h2>Возможности</h2>
+							<h2 className="fcc">Возможности</h2>
 						</div>
 						<div className="row">
 							<div className="col-md-4 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="900">

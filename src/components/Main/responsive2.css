@@ -1,0 +1,20 @@
+@media (max-width: 991px){
+    .single-box{
+        display: none;
+    }
+    .icon-data{
+        display: none;
+    }
+    .flg{
+        display: none;
+    }
+    .about-cryto.style-two{
+        padding: 235px 0 0;
+    }
+    .theme-title h2{
+        font-size: 50px;
+    }
+    .fcc{
+        font-size: 20px;
+    }
+}

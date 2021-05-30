@@ -1,7 +1,6 @@
 .container {
     margin: 0 auto;
     max-width: 1300px;
-    padding: 0 15px;
 }
 
 .header__preview {
@@ -14,7 +13,8 @@
     background-image: url(https://i.ibb.co/njP7tWQ/preview-img-1.png);
     background-repeat: no-repeat;
     z-index: -1;
-    width: 1272px;
+    max-width: 1300px;
+    width: 100%;
     height: 738px;
     left: 0px;
     top: -116px;
@@ -46,3 +46,44 @@
     border-radius: 10px;
     cursor: pointer;
   }
+
+  @media (max-width: 920px){
+    .header__title{
+      font-size: 30px;
+    }
+    .header__text{
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: 594px){
+    .btn__fill{
+      padding: 4px 5px 4px 10px;
+      font-size: 20px;
+      width: 132px;
+    }
+    .header__title{
+      line-height: 40px;
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 500px){
+    .btn__fill{
+      padding: 4px 5px 4px 10px;
+      font-size: 16px;
+      width: 100px;
+    }
+    .header__title{
+      line-height: 40px;
+      font-size: 20px;
+    }
+    .header__text{
+      line-height: 30px;
+      font-size: 20px;
+    }
+    .header__preview{
+      padding-left: 30px;
+    }
+  }
+  

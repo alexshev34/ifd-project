@@ -20,7 +20,7 @@ const UserHeader = () => {
                         <nav className={s.header__navigation}>
                             <ul className={s['header__navigation-list']}>
                                 <li className={s['header__navigation-item']}>
-                                    <NavLink to="/analytics" className={s['header__navigation-link']}>Оценка акций</NavLink>
+                                    <NavLink to="/top-stock" className={s['header__navigation-link']}>Оценка акций</NavLink>
                                 </li>
                                 <li className={s['header__navigation-item']}>
                                     <NavLink to="/portfolio" className={s['header__navigation-link']}>Оценка портфеля</NavLink>
@@ -28,11 +28,11 @@ const UserHeader = () => {
                                 <li className={s['header__navigation-item']}>
                                     <NavLink to="/appraisal" className={s['header__navigation-link']}>Рекомендации/прогнозы</NavLink>
                                 </li>
+                                <li className={s['header__navigation-item']}>
+                                <button onClick={handleLogout} className={s.header__logout}>Выйти</button>
+                                </li>
                             </ul>
                         </nav>
-                        <div className={s.header__btn}>
-                            <button onClick={handleLogout} className={s.header__logout}>Выйти</button>
-                        </div>
                     </div>
                 </div>
         </header>

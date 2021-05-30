@@ -7,7 +7,7 @@ const UserProfile = () => {
         <>
             <Recommendation/>
             <main>
-                <section className={s.sales}>
+               <section className={s.sales}>
                     <div className={s.container}>
                         <h2 className={s.sales__title}>Оценка акций</h2>
                         <ul className={s.sales__list}>

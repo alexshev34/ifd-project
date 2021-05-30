@@ -12,8 +12,7 @@ import UserAnalytics from '../UserProfile/UserAnalytics/UserAnalytics';
 import UserHeader from '../UserProfile/UserHeader/UserHeader';
 import UserPortfolio from '../UserProfile/UserPortfolio/UserPortfolio';
 import TopStock from '../UserProfile/AppraisalStock/TopStock/TopStock';
-import ResultRecommendation from '../UserProfile/ResultRecommendation/ResultRecommendation';
-// import Header from './components/Header/Header';
+import ResultRecommendation2 from '../UserProfile/ResultRecommendation/ResultRecommendation';
 
 const MainPage = () => {
     if(localStorage.getItem('tokens')){
@@ -21,13 +20,14 @@ const MainPage = () => {
             <>
             <UserHeader/>
             <Switch>
+                <Route exact path="/" component={UserProfile}/>
                 <Route exact path="/home" component={UserProfile}/>
                 <Route exact path="/worksheet" component={ProfileInformation}/>
                 <Route exact path="/appraisal" component={PortfolioAppraisal}/>
                 <Route exact path="/analytics" component={UserAnalytics}/>
                 <Route exact path="/portfolio" component={UserPortfolio}/>
                 <Route exact path="/top-stock" component={TopStock}/>
-                <Route exact path="/recommendation" component={ResultRecommendation}/>
+                <Route exact path="/recommendation" component={ResultRecommendation2}/>
             </Switch>
             </>
         )

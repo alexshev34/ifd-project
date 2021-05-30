@@ -25,8 +25,8 @@ const Header = () => {
 											</form>
 										</div> 
 									</li> --> */}
-                        <li className="login-button" style={{marginRight: 10 + 'px'}}><NavLink to="/login">Вход <i className="flaticon-right-thin"></i></NavLink></li>
-                        <li className="login-button"><NavLink to="/registration" className="login-button2" style={{width: 200 + 'px'}}>Регистрация <i className="flaticon-right-thin"></i></NavLink></li>
+                        {/* <li className="login-button" style={{marginRight: 10 + 'px'}}><NavLink to="/login" className="login-button1">Вход <i className="flaticon-right-thin"></i></NavLink></li>
+                        <li className="login-button"><NavLink to="/registration" className="login-button2" style={{width: 200 + 'px'}}>Регистрация <i className="flaticon-right-thin"></i></NavLink></li> */}
                     </ul>
 
                     <nav className="navbar navbar-expand-lg dark-bg" id="mega-menu-holder">
@@ -43,14 +43,14 @@ const Header = () => {
                                         <a className="nav-link js-scroll-trigger" href="#features">Возможности</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link js-scroll-trigger" href="#services">ТОП компаний</a>
+                                        <NavLink to="/login" className="nav-link js-scroll-trigger" href="#features">Вход</NavLink>
                                     </li>
-                                    {/* <!-- <li className="nav-item">
-							    		  	  <a className="nav-link js-scroll-trigger" href="#apps-review">Apps Review</a>
-							    		  	</li>
-							    		  	<li className="nav-item">
-							    		  	  <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
-							    		  	</li> --> */}
+                                    <li className="nav-item">
+                                        <NavLink to="/registration" className="nav-link js-scroll-trigger" href="#features">Регистрация</NavLink>
+                                    </li>
+                                    {/* <li className="nav-item">
+                                        <a className="nav-link js-scroll-trigger" href="#services">ТОП компаний</a>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>

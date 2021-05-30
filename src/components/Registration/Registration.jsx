@@ -26,14 +26,6 @@ const Registration = () => {
         }
     }
    
-    // const handleSubmit = () => {
-    //     localStorage.setItem("email", email);
-    //     localStorage.setItem("password", password);
-        
-    //     document.location.href="http://localhost:3000/";
-        // document.location.href="http://invest-for.surge.sh/";
-        // event.preventDefault()
-    // }
     return (
         <>
             <div class="testing">

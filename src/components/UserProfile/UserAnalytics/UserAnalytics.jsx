@@ -152,7 +152,6 @@ class UserAnalytics extends React.Component {
             <main>
                 <div className={s.container}>
                     <h1 className={s.reccomendation__title}>Рекомендации и прогнозы</h1>
-                    <p className={s.reccomendation__text}>По вашим параметрам оптимальным вариантом будет</p>
                     <section className={s.reccomendation__table}>
                     <table>
                         <tr>

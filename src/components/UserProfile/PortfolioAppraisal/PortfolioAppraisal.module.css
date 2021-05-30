@@ -117,22 +117,23 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-around;
-        -ms-flex-pack: space-around;
-            justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .portfolio__select1 {
     margin-bottom: 20px;
     width: 312px;
+    margin-right: 80px;
+    margin-left: 219px;
 
     background-color: #6F42C1;
     color: #fff;
   }
   .portfolio__select2 {
     margin-bottom: 20px;
-    width: 100%;
+    width: 159px;
 
-    border: none;
     background-color: #6F42C1;
     color: #fff;
   }
@@ -197,11 +198,7 @@
       width: 100%;
     }
     .portfolio__item{
-      margin-right: 15px;
+      max-width: 200px;
       width: 100%;
     }
-  }
-
-  @media(max-width: 670px){
-
   }

@@ -26,7 +26,7 @@ const TopStock = () => {
                                     <td>31%</td>
                                 </tr>
                                 <tr>
-                                    <td>Норникель</td>
+                                    <td>Норникель dgfhdghdfhf dfgdfgdfg</td>
                                     <td>GMKN RX</td>
                                     <td>10.2%</td>
                                     <td>31%</td>

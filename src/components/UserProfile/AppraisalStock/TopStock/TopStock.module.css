@@ -28,3 +28,15 @@
 .stock__table table td{
     text-align: center;
 }
+
+@media(max-width: 921px){
+    .stock__title{
+        padding-top: 165px;
+    }
+}
+
+@media(max-width: 501px){
+    .stock__title{
+        padding-top: 235px;
+    }
+}

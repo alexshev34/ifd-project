@@ -69,6 +69,31 @@
 }
 
 .risk__text{
-    /* font-size: 20px; */
     margin-bottom: 35px;
+}
+
+@media(max-width: 1000px){
+    .appraisal__list{
+        flex-wrap: wrap;
+    }
+    .appraisal__item{
+        margin-right: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 980px){
+    .risk__list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .risk__item{
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 501px){
+    .appraisal__title{
+        padding-top: 225px;
+    }
 }
