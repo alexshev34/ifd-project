@@ -35,7 +35,6 @@ export const useHttp = () => {
                     .then(res2 => res2.json())
                     .then(res2Json => setData(res2Json))
                     setTimeout(() => setFetching(true), 2000)
-                    alert("Акция успешно добавлена")
                 });
             }
 

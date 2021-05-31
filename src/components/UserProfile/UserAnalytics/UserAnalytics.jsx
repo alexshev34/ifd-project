@@ -151,7 +151,7 @@ class UserAnalytics extends React.Component {
         <>
             <main>
                 <div className={s.container}>
-                    <h1 className={s.reccomendation__title}>Рекомендации и прогнозы</h1>
+                    <h1 className={s.reccomendation__title}>Мои акции</h1>
                     <section className={s.reccomendation__table}>
                     <table>
                         <tr>

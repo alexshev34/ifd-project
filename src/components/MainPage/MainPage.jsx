@@ -29,6 +29,7 @@ const MainPage = () => {
                 <Route exact path="/top-stock" component={TopStock}/>
                 <Route exact path="/recommendation" component={ResultRecommendation2}/>
             </Switch>
+            <Footer/>
             </>
         )
     }

@@ -135,11 +135,10 @@ body {
 .sales__item {
   width: 342px;
   max-width: 342px;
-  margin-right: 68px;
 }
-.sales__item:nth-child(1) {
-  margin-left: 68px;
-}
+/* .sales__item:not(:last-child){
+  margin-right: 148px;
+} */
 .sales__text {
   color: #000;
   font-size: 30px;
@@ -152,9 +151,8 @@ body {
   margin-right: auto;
 }
 .sales__img {
-  width: 342px;
-  height: 390px;
-  background: #6F42C1;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .risk {
@@ -179,11 +177,12 @@ body {
 .risk__item {
   width: 342px;
   max-width: 342px;
-  margin-right: 68px;
 }
-.risk__item:nth-child(1) {
-  margin-left: 68px;
-}
+
+/* .risk__item:not(:last-child){
+  margin-right: 230px;
+} */
+
 .risk__text {
   color: #000;
   font-size: 30px;
@@ -198,8 +197,6 @@ body {
 .risk__img {
   max-width: 227px;
   margin: 0 auto;
-  /* height: 390px; */
-  /* background: #6F42C1; */
 }
 
 .recomendation {
@@ -225,11 +222,11 @@ body {
 .recomendation__item {
   width: 342px;
   max-width: 342px;
-  margin-right: 68px;
+  /* margin-right: 68px; */
 }
-.recomendation__item:nth-child(1) {
-  margin-left: 68px;
-}
+/* .recomendation__item:not(:last-child) {
+  margin-right: 238px;
+} */
 .recomendation__text {
   color: #000;
   font-size: 30px;
@@ -244,8 +241,6 @@ body {
 .recomendation__img {
   max-width: 276px;
   margin: 0 auto;
-  /* height: 390px; */
-  /* background: #6F42C1; */
 }
 
 @media (max-width: 1116px){
@@ -293,6 +288,39 @@ body {
   }
 }
 
+@media(max-width: 908px){
+  .test1{
+    display: block;
+  }
+  .sales__list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .sales__item{
+    margin-bottom: 70px;
+  }
+  .risk{
+    margin-top: 0;
+  }
+  .risk__list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .risk__item{
+    margin-bottom: 70px;
+  }
+  .recomendation{
+    margin-top: 0;
+  }
+  .recomendation__list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .recomendation__item{
+    margin-bottom: 70px;
+  }
+}
+
 @media (max-width: 700px){
   .header__wrapper{
     justify-content: flex-start;
@@ -303,6 +331,40 @@ body {
   }
   .header__navigation-item{
     margin-right: 15px;
+  }
+}
+
+@media (max-width: 590px){
+  .sales__title{
+    font-size: 30px;
+  }
+  .sales__text{
+    font-size: 20px;
+  }
+  .sales__img{
+    max-width: 260px;
+  }
+  .sales__img img{
+    max-width: 250px;
+    width: 100%;
+  }
+  .risk__title{
+    font-size: 30px;
+  }
+  .risk__text{
+    font-size: 20px;
+  }
+  .risk__img{
+    max-width: 260px;
+  }
+  .recomendation__title{
+    font-size: 30px;
+  }
+  .recomendation__text{
+    font-size: 20px;
+  }
+  .recomendation__img{
+    max-width: 260px;
   }
 }
 

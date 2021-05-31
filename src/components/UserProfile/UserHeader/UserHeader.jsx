@@ -6,7 +6,7 @@ const UserHeader = () => {
 
     const handleLogout = () => {
         localStorage.clear();
-        document.location.href="http://localhost:3000/";
+        document.location.href="http://invest-for.surge.sh";
     }
     return(
         <header className={s.header}>

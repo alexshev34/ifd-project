@@ -9,7 +9,131 @@ const ProfileInformation = () => {
         stock: '',
         col: ''
     })
-
+    let array = [
+        'MD Medical Group Investments PLC',
+        'ИСКЧ',
+        'Globaltrans Investment PLC',
+        'Аэрофлот',
+        'ГК Самолет',
+        'Городские Инновационные Технологии',
+        'ГТМ',
+        'ДВМП',
+        'КАМАЗ',
+        'Корпорация ИРКУТ',
+        'Мостотрест',
+        'Мультисистема',
+        'НКХП',
+        'НМТП',
+        'Объединенная авиастроительная корпорация',
+        'ОВК',
+        'РКК Энергия им.С.П.Королева',
+        'Сегежа',
+        'Совкомфлот',
+        'ТрансКонтейнер',
+        'Трубная Металлургическая Компания',
+        'Etalon Group PLC',
+        'Группа ЛСР',
+        'ПИК',
+        'Fix Price Group',
+        'O\'Key Group SA',
+        'Ozon Holdings PLC',
+        'АбрауДюрсо',
+        'Аптечная сеть 36,6',
+        'Белуга Групп ПАО ао',
+        'ГДР X5 RetailGroup',
+        'Группа Черкизово',
+        'Детский Мир',
+        'Красный Октябрь',
+        'Лента',
+        'М.Видео',
+        'Магнит',
+        'Обувь России',
+        'РусАгро',
+        'Русгрэйн',
+        'Русская аквакультура',
+        'СОЛЛЕРС',
+        'Фармсинтез',
+        'En+ Group',
+        'Petropavlovsk PLC',
+        'Polymetal',
+        'Акрон',
+        'АЛРОСА',
+        'АЛРОСА-Нюрба',
+        'Ашинский метзавод',
+        'ВСМПО-АВИСМА',
+        'Лензолото',
+        'Магнитогорский металлургический комбинат',
+        'Мечел',
+        'Нижнекамскнефтехим',
+        'НЛМК',
+        'Норильский никель',
+        'ПАО «КАЗАНЬОРГСИНТЕЗ»',
+        'Полюс Золото',
+        'Распадская',
+        'РУСАЛ',
+        'Русолово',
+        'Русполимет',
+        'Северсталь',
+        'Селигдар',
+        'ФосАгро',
+        'ЧЗПСН',
+        'ЧМК',
+        'ЧТПЗ',
+        'ЮУНК',
+        'MAIL.RU',
+        'Yandex',
+        'АФК Система',
+        'МТС',
+        'Наука-Связь',
+        'Ростелеком',
+        'Таттелеком',
+        'Центральный Телеграф',
+        'QIWI',
+        'TCS Group',
+        'Банк ВТБ',
+        'Банк Санкт-Петербург',
+        'МКБ',
+        'Московская Биржа',
+        'САФМАР',
+        'Сбер Банк',
+        'Вторая генерирующая компания оптового рынка электроэнергии',
+        'Дагестанская энергосбытовая компания',
+        'ДЭК',
+        'Интер РАО ЕЭС',
+        'Иркутскэнерго',
+        'Калужская сбытовая компания',
+        'Квадра',
+        'Ленэнерго',
+        'Мосэнерго',
+        'МОЭСК',
+        'МРСК Волги',
+        'МРСК Северо-Запада',
+        'МРСК Сибири',
+        'МРСК Урала',
+        'МРСК Центра',
+        'МРСК Центра и Приволжья',
+        'МРСК Юга',
+        'Пермэнергосбыт',
+        'Российские сети',
+        'РусГидро',
+        'ТГК-1',
+        'ТГК-14',
+        'ТГК-2',
+        'ТНС энерго Воронеж',
+        'ФСК ЕЭС',
+        'Энел Россия',
+        'Юнипро',
+        'Башнефть',
+        'Газпром',
+        'Газпром нефть',
+        'ЛУКОЙЛ',
+        'НОВАТЭК',
+        'Роснефть',
+        'РуссНефть',
+        'Сургутнефтегаз',
+        'Татнефть',
+        'Транснефть'
+    ];
 
     const orderHandler = e => {
         setForm({ ...form, [e.target.name]: e.target.value})
@@ -38,7 +162,10 @@ const ProfileInformation = () => {
                         <li className={s.portfolio__item}>
                             <select className={s.portfolio__select1} name="stock" id="stock" onChange={orderHandler}>
                                 <option selected>Компания</option>
-                                <option value="MD Medical Group Investments PLC">MD Medical Group Investments PLC</option>
+                                { array.map((item) => (
+                                 <option value={item}>{item}</option>
+                        ))}
+                                {/* <option value="MD Medical Group Investments PLC">MD Medical Group Investments PLC</option>
                                 <option value="ИСКЧ">ИСКЧ</option>
                                 <option value="Globaltrans Investment PLC">Globaltrans Investment PLC</option>
                                 <option value="Аэрофлот">Аэрофлот</option>
@@ -54,8 +181,42 @@ const ProfileInformation = () => {
                                 <option value="НМТП">НМТП</option>
                                 <option value="Объединенная авиастроительная корпорация">Объединенная авиастроительная корпорация</option>
                                 <option value="ОВК">ОВК</option>
-                                <option value="Городские Инновационные Технологии">Городские Инновационные Технологии</option>
-                            </select><br />
+                                <option value="РКК Энергия им.С.П.Королева">РКК Энергия им.С.П.Королева</option>
+
+                                <option value="Сегежа">Сегежа</option>
+                                <option value="Совкомфлот">Совкомфлот</option>
+                                <option value="ТрансКонтейнер">ТрансКонтейнер</option>
+                                <option value="Трубная Металлургическая Компания">Трубная Металлургическая Компания</option>
+                                <option value="Etalon Group PLC">Etalon Group PLC</option>
+                                <option value="Группа ЛСР">Группа ЛСР</option>
+                                <option value="ПИК">ПИК</option>
+
+                                <option value="Fix Price Group">Fix Price Group</option>
+                                <option value="O'Key Group SA">O'Key Group SA</option>
+                                <option value="Ozon Holdings PLC">Ozon Holdings PLC</option>
+                                <option value="АбрауДюрсо">АбрауДюрсо</option>
+                                <option value="Аптечная сеть 36,6">Аптечная сеть 36,6</option>
+                                <option value="Белуга Групп ПАО ао">Белуга Групп ПАО ао</option>
+                                <option value="ГДР X5 RetailGroup">ГДР X5 RetailGroup</option>
+
+                                <option value="Группа Черкизово">Группа Черкизово</option>
+                                <option value="Детский Мир">Детский Мир</option>
+                                <option value="Красный Октябрь">Красный Октябрь</option>
+                                <option value="Лента">Лента</option>
+                                <option value="М.Видео">М.Видео</option>
+                                <option value="Магнит">Магнит</option>
+                                <option value="Обувь России">Обувь России</option>
+
+                                <option value="РусАгро">РусАгро</option>
+                                <option value="Обувь России">Обувь России</option>
+                                <option value="Обувь России">Обувь России</option>
+                                <option value="Обувь России">Обувь России</option>
+                                <option value="Обувь России">Обувь России</option>
+                                <option value="Обувь России">Обувь России</option>
+                                <option value="Обувь России">Обувь России</option>
+                                <option value="Обувь России">Обувь России</option> */}
+                                 </select>
+                            <br />
                         </li>
                         <li className={s.portfolio__item}>
                             <input className={s.portfolio__select2} type="text" name="col" id="col" value={form.col} onChange={orderHandler} placeholder="Количество"/><br />

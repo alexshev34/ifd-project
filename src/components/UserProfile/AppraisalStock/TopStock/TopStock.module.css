@@ -20,9 +20,16 @@
     border-collapse: collapse;
 }
 
+.stock__table table td, th{
+    border: 1px solid black;
+    padding: 4px;
+}
+
 .stock__table table th{
-    width: 300px;
+    /* width: 300px; */
     text-align: center;
+    background-color: #6F42C1;
+    color: #fff;
 }
 
 .stock__table table td{
@@ -38,5 +45,20 @@
 @media(max-width: 501px){
     .stock__title{
         padding-top: 235px;
+    }
+}
+
+@media(max-width: 412px){
+    .stock__table table th{
+        font-size: 12px;
+    }
+    .stock__table table tr{
+        font-size: 12px;
+    }
+    .stock__title{
+        font-size: 28px;
+    }
+    .stock__text{
+        font-size: 16px;
     }
 }

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import s from './PortfolioAppraisal.module.css'
 import f from './../UserAnalytics/UserAnalytics.module.css';
-import { useHttp } from '../../../hooks/http.hookProfile';
+import { useHttp } from '../../../hooks/http.hookProfile3';
 
 const PortfolioAppraisal = () => {
     const {loading, request, data, isFetching, col} = useHttp()
@@ -47,14 +47,14 @@ const PortfolioAppraisal = () => {
             </form>
             {isFetching ? 
             <div className={f.container}>
-                    <p className={f.reccomendation__text}>По вашим параметрам в {data.sum} рублей оптимальным вариантом будет</p>
+                    <p className={f.reccomendation__text}>По вашим параметрам в {form.money_available} рублей оптимальным вариантом будет</p>
                     <section className={f.reccomendation__table}>
                         <table>
                             <tr>
                                 <th>Акция</th>
                                 <th>Тикет</th>
                                 <th>Цена</th>
-                                <th>Количество</th>
+                                <th>Кол.</th>
                                 <th>Сумма</th>
                             </tr>
                         {data.recommendations.map((item) => (
